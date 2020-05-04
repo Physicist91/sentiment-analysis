@@ -1,5 +1,7 @@
-# SageMaker Deployment Project
+# Sentiment Analysis Web App
 
-The notebook and Python files provided here, once completed, result in a simple web app which interacts with a deployed recurrent neural network performing sentiment analysis on movie reviews. This project assumes some familiarity with SageMaker, the mini-project, Sentiment Analysis using XGBoost, should provide enough background.
+Sentiment Analysis of Movie Reviews using RNN on Amazon Sagemaker
+* Kevin Siswandi
+* Machine Learning Engineering Nanodegree
 
-Please see the [README](https://github.com/udacity/sagemaker-deployment/tree/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
+Here I build a simple web app that interacts with a recurrent neural network (RNN) deployed on Amazon Sagemaker. The RNN is trained on dataset of movie reviews to predict the review sentiment given a user review. The API of the deployed RNN is also publicly accessible and is used by the web app to send data and retrieve predictions.
