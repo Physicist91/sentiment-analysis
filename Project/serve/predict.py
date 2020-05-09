@@ -86,7 +86,7 @@ def predict_fn(input_data, model):
     # TODO: Compute the result of applying the model to the input data. The variable `result` should
     #       be a numpy array which contains a single integer which is either 1 or 0
 
-    result = model(data_pack)
-    result = round(result)
+    result = np.squeeze(model(data))
+    result = 1 if result > 0.5 else 0
 
     return result
